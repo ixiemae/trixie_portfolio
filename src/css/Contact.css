@@ -1,0 +1,110 @@
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.contact-title {
+  color: #8b0000;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 2px solid #8b0000;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.contact-card h2 {
+  color: #8b0000;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-items-container {
+  text-align: left;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item strong {
+  min-width: 80px;
+  display: inline-block;
+}
+
+.fblogo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.fblogo:hover {
+  transform: scale(1.1);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-btn-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #8b0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  background: #7b1113;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px 15px;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+  }
+  
+  .contact-card {
+    padding: 20px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-item strong {
+    margin-bottom: 5px;
+  }
+  
+  .fblogo {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
