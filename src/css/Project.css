@@ -1,3 +1,10 @@
+@media (max-width: 1024px) and (min-width: 701px) {
+  .project-item {
+    padding: 24px 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}
 .projects-simple {
   max-width: 800px;
   margin: 0 auto;
@@ -18,9 +25,10 @@
   gap: 48px 32px;
   justify-content: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
   .project-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+    justify-content: center;
   }
 }
 
@@ -75,12 +83,16 @@
   background: #7b1113;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
   .projects-simple {
     padding: 20px 15px;
   }
   
   .project-item {
-    padding: 20px;
+    padding: 14px 6px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    width: 100%;
+    grid-template-columns: repeat(1, minmax(50px, 50px));
   }
 }
